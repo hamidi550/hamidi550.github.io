@@ -3,27 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mon portfolio avec mes applications disponibles sur plusieurs plateformes.">
-    <title>Mon Portfolio - Applications</title>
+    <title>Votre Nom - Développeur d'Applications</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="logo">HarouDev</div>
-        <nav>
-            <ul>
-                <li><a href="#about">À Propos</a></li>
-                <li><a href="#apps">Mes Applications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="logo">Votre Nom</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#platforms">Plateformes</a></li>
+                    <li><a href="#apps">Applications</a></li>
+                    <li><a href="#stats">Statistiques</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <section class="hero">
+    <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Bienvenue sur mon Portfolio</h1>
-                <p>Découvrez mes applications disponibles sur l'App Store et Google Play.</p>
+                <h1>Solutions Mobiles Innovantes</h1>
+                <p>Création d'expériences mobiles engageantes pour iOS, Android et autres plateformes</p>
+                <div class="stores">
+                    <a href="#" class="store-btn">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store">
+                    </a>
+                    <a href="#" class="store-btn">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store">
+                    </a>
+                    <a href="#" class="store-btn">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Xiaomi_logo_%282021-%29.svg/512px-Xiaomi_logo_%282021-%29.svg.png" alt="Xiaomi Store" style="height: 45px;">
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/banner.png" alt="Développeur Mobile">
+            </div>
+        </div>
+    </section>
+
+    <section id="platforms" class="platforms-section">
+        <div class="container">
+            <h2>Disponible sur</h2>
+            <div class="platforms-grid">
+                <div class="platform-card" data-platform="ios">
+                    <i class="fab fa-apple"></i>
+                    <h3>App Store</h3>
+                </div>
+                <div class="platform-card" data-platform="android">
+                    <i class="fab fa-google-play"></i>
+                    <h3>Play Store</h3>
+                </div>
+                <div class="platform-card" data-platform="xiaomi">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Xiaomi Store</h3>
+                </div>
+                <div class="platform-card" data-platform="huawei">
+                    <i class="fas fa-mobile"></i>
+                    <h3>AppGallery</h3>
+                </div>
             </div>
         </div>
     </section>
@@ -31,28 +79,73 @@
     <section id="apps" class="apps-section">
         <div class="container">
             <h2>Mes Applications</h2>
+            <p class="section-subtitle">Disponibles sur plusieurs plateformes</p>
+            
+            <div class="platform-filter">
+                <button class="filter-btn active" data-filter="all">Toutes</button>
+                <button class="filter-btn" data-filter="ios">iOS</button>
+                <button class="filter-btn" data-filter="android">Android</button>
+                <button class="filter-btn" data-filter="xiaomi">Xiaomi</button>
+            </div>
+            
             <div class="apps-grid">
-                <!-- Application 1 -->
+                <!-- App 1 -->
                 <div class="app-card">
-                    <img src="app1-image.jpg" alt="Application 1" class="app-image">
+                    <div class="app-image">
+                        <img src="images/app1.png" alt="App 1">
+                    </div>
                     <div class="app-content">
-                        <h3>Fruits & Crayons</h3>
-                        <p>Une description brève de l'application 1. Disponible sur les principales plateformes.</p>
+                        <h3>Application 1</h3>
+                        <p class="app-description">Description de l'application 1 avec ses fonctionnalités principales et son utilité.</p>
                         <div class="app-links">
-                            <a href="https://play.google.com/store/apps/details?id=com.example.app1" class="app-link android" target="_blank">Télécharger sur Google Play</a>
-                            <a href="https://apps.apple.com/us/app/app1/id123456789" class="app-link ios" target="_blank">Télécharger sur l'App Store</a>
+                            <a href="#" class="app-link ios"><i class="fab fa-apple"></i> App Store</a>
+                            <a href="#" class="app-link android"><i class="fab fa-google-play"></i> Play Store</a>
+                            <a href="#" class="app-link xiaomi"><i class="fas fa-mobile-alt"></i> Xiaomi</a>
                         </div>
                     </div>
                 </div>
-                <!-- Application 2 -->
+                
+                <!-- App 2 -->
                 <div class="app-card">
-                    <img src="app2-image.jpg" alt="Application 2" class="app-image">
+                    <div class="app-image">
+                        <img src="images/app2.png" alt="App 2">
+                    </div>
                     <div class="app-content">
                         <h3>Application 2</h3>
-                        <p>Une description brève de l'application 2. Disponible sur les principales plateformes.</p>
+                        <p class="app-description">Description de l'application 2 avec ses fonctionnalités principales et son utilité.</p>
                         <div class="app-links">
-                            <a href="https://play.google.com/store/apps/details?id=com.example.app2" class="app-link android" target="_blank">Télécharger sur Google Play</a>
-                            <a href="https://apps.apple.com/us/app/app2/id987654321" class="app-link ios" target="_blank">Télécharger sur l'App Store</a>
+                            <a href="#" class="app-link ios"><i class="fab fa-apple"></i> App Store</a>
+                            <a href="#" class="app-link android"><i class="fab fa-google-play"></i> Play Store</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- App 3 -->
+                <div class="app-card">
+                    <div class="app-image">
+                        <img src="images/app3.png" alt="App 3">
+                    </div>
+                    <div class="app-content">
+                        <h3>Application 3</h3>
+                        <p class="app-description">Description de l'application 3 avec ses fonctionnalités principales et son utilité.</p>
+                        <div class="app-links">
+                            <a href="#" class="app-link android"><i class="fab fa-google-play"></i> Play Store</a>
+                            <a href="#" class="app-link xiaomi"><i class="fas fa-mobile-alt"></i> Xiaomi</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- App 4 -->
+                <div class="app-card">
+                    <div class="app-image">
+                        <img src="images/app4.png" alt="App 4">
+                    </div>
+                    <div class="app-content">
+                        <h3>Application 4</h3>
+                        <p class="app-description">Description de l'application 4 avec ses fonctionnalités principales et son utilité.</p>
+                        <div class="app-links">
+                            <a href="#" class="app-link ios"><i class="fab fa-apple"></i> App Store</a>
+                            <a href="#" class="app-link xiaomi"><i class="fas fa-mobile-alt"></i> Xiaomi</a>
                         </div>
                     </div>
                 </div>
@@ -60,35 +153,120 @@
         </div>
     </section>
 
+    <section id="stats" class="stats-section">
+        <div class="container">
+            <h2>Impact de Mes Applications</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fas fa-download"></i>
+                    <h3 data-count="10000">0</h3>
+                    <p>Téléchargements</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-star"></i>
+                    <h3 data-count="4.8">0</h3>
+                    <p>Note moyenne</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-globe"></i>
+                    <h3 data-count="50">0</h3>
+                    <p>Pays</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-user"></i>
+                    <h3 data-count="5000">0</h3>
+                    <p>Utilisateurs actifs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="about" class="about-section">
         <div class="container">
-            <h2>À Propos de Moi</h2>
-            <p>Je suis développeur et j'aime créer des applications innovantes pour différentes plateformes. Découvrez quelques-unes de mes réalisations.</p>
+            <div class="about-content">
+                <h2>À Propos de Moi</h2>
+                <p>Bonjour, je suis [Votre Nom], un développeur mobile passionné avec [X] années d'expérience dans la création d'applications pour iOS, Android et autres plateformes.</p>
+                <p>Je me spécialise dans la création d'applications performantes, conviviales et qui résolvent des problèmes réels. Mon objectif est de fournir des solutions numériques qui améliorent la vie quotidienne.</p>
+                <p>Quand je ne code pas, vous pouvez me trouver en train d'explorer de nouvelles technologies ou de contribuer à des projets open source.</p>
+                <div class="skills">
+                    <h3>Compétences Techniques</h3>
+                    <ul>
+                        <li>Swift & Objective-C</li>
+                        <li>Kotlin & Java</li>
+                        <li>Flutter & Dart</li>
+                        <li>React Native</li>
+                        <li>Firebase</li>
+                        <li>API REST</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="images/profile.jpg" alt="Votre Nom">
+            </div>
         </div>
     </section>
 
     <section id="contact" class="contact-section">
         <div class="container">
             <h2>Contactez-moi</h2>
-            <form class="contact-form">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Votre Nom" required>
+            <p class="section-subtitle">Vous avez un projet en tête ou souhaitez collaborer ?</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>votre@email.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+XX XXX-XXXX-XX</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Votre Pays</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Votre Email" required>
-                </div>
-                <div class="form-group">
-                    <textarea name="message" placeholder="Votre Message" required></textarea>
-                </div>
-                <button type="submit" class="btn">Envoyer</button>
-            </form>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Votre Nom" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Votre Email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Sujet" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Votre Message" rows="5" name="content" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Envoyer le Message</button>
+                </form>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Mon Portfolio</p>
+        <div class="container">
+            <p>&copy; 2023 Votre Nom. Tous droits réservés.</p>
+            <div class="footer-links">
+                <a href="#">Politique de confidentialité</a>
+                <a href="#">Conditions d'utilisation</a>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("YOUR_PUBLIC_KEY"); // Remplacez par votre clé publique EmailJS
+        })();
+    </script>
 </body>
 </html>
