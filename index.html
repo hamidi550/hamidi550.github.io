@@ -3,68 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Votre Nom - Développeur d'Applications</title>
+    <meta name="description" content="Mon portfolio avec mes applications disponibles sur plusieurs plateformes.">
+    <title>Mon Portfolio - Applications</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Votre Nom</h1>
-            <p>Développeur d'Applications Multiplateformes</p>
-        </div>
+        <div class="logo">Mon Portfolio</div>
+        <nav>
+            <ul>
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#apps">Mes Applications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="about">
+    <section class="hero">
         <div class="container">
-            <h2>À Propos de Moi</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Je suis un développeur passionné créant des applications innovantes disponibles sur plusieurs plateformes. Mon objectif est de fournir des solutions numériques qui améliorent la vie quotidienne.</p>
-                </div>
-                <div class="about-image">
-                    <img src="assets/images/your-photo.jpg" alt="Votre photo">
-                </div>
+            <div class="hero-content">
+                <h1>Bienvenue sur mon Portfolio</h1>
+                <p>Découvrez mes applications disponibles sur l'App Store et Google Play.</p>
             </div>
         </div>
     </section>
 
-    <section id="apps">
+    <section id="apps" class="apps-section">
         <div class="container">
             <h2>Mes Applications</h2>
             <div class="apps-grid">
-                <!-- Exemple d'une application -->
+                <!-- Application 1 -->
                 <div class="app-card">
-                    <img src="assets/images/app1-icon.png" alt="Icône de l'application 1" class="app-icon">
-                    <h3>Nom de l'Application 1</h3>
-                    <p>Description courte de l'application et de ses fonctionnalités principales.</p>
-                    <div class="download-badges">
-                        <a href="lien-play-store" target="_blank"><img src="assets/images/google-play-badge.png" alt="Disponible sur Google Play"></a>
-                        <a href="lien-app-store" target="_blank"><img src="assets/images/app-store-badge.png" alt="Télécharger sur l'App Store"></a>
-                        <a href="lien-xiaomi" target="_blank"><img src="assets/images/xiaomi-badge.png" alt="Disponible sur Xiaomi App Store"></a>
+                    <img src="app1-image.jpg" alt="Application 1" class="app-image">
+                    <div class="app-content">
+                        <h3>Application 1</h3>
+                        <p>Une description brève de l'application 1. Disponible sur les principales plateformes.</p>
+                        <div class="app-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.example.app1" class="app-link android" target="_blank">Télécharger sur Google Play</a>
+                            <a href="https://apps.apple.com/us/app/app1/id123456789" class="app-link ios" target="_blank">Télécharger sur l'App Store</a>
+                        </div>
                     </div>
                 </div>
-
-                <!-- Ajoutez autant d'applications que nécessaire -->
+                <!-- Application 2 -->
+                <div class="app-card">
+                    <img src="app2-image.jpg" alt="Application 2" class="app-image">
+                    <div class="app-content">
+                        <h3>Application 2</h3>
+                        <p>Une description brève de l'application 2. Disponible sur les principales plateformes.</p>
+                        <div class="app-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.example.app2" class="app-link android" target="_blank">Télécharger sur Google Play</a>
+                            <a href="https://apps.apple.com/us/app/app2/id987654321" class="app-link ios" target="_blank">Télécharger sur l'App Store</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="contact">
+    <section id="about" class="about-section">
         <div class="container">
-            <h2>Contact</h2>
-            <div class="contact-links">
-                <a href="mailto:votre@email.com"><i class="fas fa-envelope"></i> votre@email.com</a>
-                <a href="https://github.com/votreusername" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                <a href="https://linkedin.com/in/votreprofil" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            </div>
+            <h2>À Propos de Moi</h2>
+            <p>Je suis développeur et j'aime créer des applications innovantes pour différentes plateformes. Découvrez quelques-unes de mes réalisations.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contactez-moi</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Votre Nom" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Votre Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Votre Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2023 Votre Nom. Tous droits réservés.</p>
-        </div>
+        <p>&copy; 2025 Mon Portfolio</p>
     </footer>
 
     <script src="script.js"></script>
