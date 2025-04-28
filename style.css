@@ -1,185 +1,112 @@
-/* Reset et styles de base */
+/* Global Styles */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --text-color: #333;
+    --white: #fff;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
+    color: var(--text-color);
+    background-color: var(--white);
+    overflow-x: hidden;
 }
 
-.container {
-    width: 85%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 0;
-}
-
-/* En-tête */
 header {
-    background: linear-gradient(135deg, #6e8efb, #a777e3);
-    color: white;
-    text-align: center;
-    padding: 60px 0;
+    background: var(--white);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 1rem;
+    z-index: 100;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+header .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--dark-color);
 }
 
-header p {
-    font-size: 1.2rem;
-    opacity: 0.9;
-}
-
-/* Sections */
-section {
-    padding: 60px 0;
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 2rem;
-    color: #444;
-}
-
-/* À propos */
-.about-content {
+nav ul {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
+    list-style: none;
+    justify-content: flex-end;
 }
 
-.about-text {
-    flex: 1;
-    min-width: 300px;
+nav ul li {
+    margin-left: 2rem;
 }
 
-.about-image {
-    flex: 1;
-    min-width: 300px;
-    text-align: center;
+nav ul li a {
+    color: var(--dark-color);
+    font-weight: 600;
 }
 
-.about-image img {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+.hero {
+    padding: 8rem 0 4rem;
+    background: #f5f7fa;
 }
 
-/* Applications */
+.apps-section {
+    padding: 5rem 0;
+    background-color: var(--white);
+}
+
 .apps-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 30px;
+    gap: 2rem;
 }
 
 .app-card {
-    background: white;
+    background: var(--white);
     border-radius: 10px;
-    padding: 25px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
 }
 
-.app-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+.app-image {
+    width: 100%;
+    height: auto;
 }
 
-.app-icon {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto 20px;
-    display: block;
-    border-radius: 20px;
+.app-content h3 {
+    color: var(--dark-color);
+    margin-bottom: 0.5rem;
 }
 
-.app-card h3 {
-    margin-bottom: 15px;
+.app-links a {
+    padding: 0.8rem 1.2rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    color: var(--white);
+    font-weight: 600;
     text-align: center;
-    color: #555;
+    display: inline-block;
 }
 
-.app-card p {
-    margin-bottom: 20px;
-    color: #666;
+.app-link.ios {
+    background-color: #000;
 }
 
-.download-badges {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+.app-link.android {
+    background-color: #4285F4;
 }
 
-.download-badges img {
-    height: 40px;
-    transition: transform 0.3s ease;
-}
-
-.download-badges img:hover {
-    transform: scale(1.05);
-}
-
-/* Contact */
-.contact-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
-}
-
-.contact-links a {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    color: #6e8efb;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
-}
-
-.contact-links a:hover {
-    color: #a777e3;
-}
-
-.contact-links i {
-    font-size: 1.3rem;
-}
-
-/* Pied de page */
 footer {
-    background: #333;
-    color: white;
+    background: var(--secondary-color);
+    color: var(--white);
     text-align: center;
-    padding: 20px 0;
-    margin-top: 60px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .about-content {
-        flex-direction: column;
-    }
-    
-    .apps-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .contact-links {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
+    padding: 1.5rem;
 }
