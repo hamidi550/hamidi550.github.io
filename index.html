@@ -1,18 +1,72 @@
-<!doctype html>
-<title>Site Maintenance</title>
-<style>
-  body { text-align: center; padding: 150px; }
-  h1 { font-size: 50px; }
-  body { font: 20px Helvetica, sans-serif; color: #333; }
-  article { display: block; text-align: left; width: 650px; margin: 0 auto; }
-  a { color: #dc8100; text-decoration: none; }
-  a:hover { color: #333; text-decoration: none; }
-</style>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre Nom - Développeur d'Applications</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Votre Nom</h1>
+            <p>Développeur d'Applications Multiplateformes</p>
+        </div>
+    </header>
 
-<article>
-    <h1>We&rsquo;ll be back soon!</h1>
-    <div>
-        <p>Sorry for the inconvenience but we&rsquo;re performing some maintenance at the moment. If you need to you can always <a href="mailto:#">contact us</a>, otherwise we&rsquo;ll be back online shortly!</p>
-        <p>&mdash; Hamidi</p>
-    </div>
-</article>
+    <section id="about">
+        <div class="container">
+            <h2>À Propos de Moi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Je suis un développeur passionné créant des applications innovantes disponibles sur plusieurs plateformes. Mon objectif est de fournir des solutions numériques qui améliorent la vie quotidienne.</p>
+                </div>
+                <div class="about-image">
+                    <img src="assets/images/your-photo.jpg" alt="Votre photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="apps">
+        <div class="container">
+            <h2>Mes Applications</h2>
+            <div class="apps-grid">
+                <!-- Exemple d'une application -->
+                <div class="app-card">
+                    <img src="assets/images/app1-icon.png" alt="Icône de l'application 1" class="app-icon">
+                    <h3>Nom de l'Application 1</h3>
+                    <p>Description courte de l'application et de ses fonctionnalités principales.</p>
+                    <div class="download-badges">
+                        <a href="lien-play-store" target="_blank"><img src="assets/images/google-play-badge.png" alt="Disponible sur Google Play"></a>
+                        <a href="lien-app-store" target="_blank"><img src="assets/images/app-store-badge.png" alt="Télécharger sur l'App Store"></a>
+                        <a href="lien-xiaomi" target="_blank"><img src="assets/images/xiaomi-badge.png" alt="Disponible sur Xiaomi App Store"></a>
+                    </div>
+                </div>
+
+                <!-- Ajoutez autant d'applications que nécessaire -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-links">
+                <a href="mailto:votre@email.com"><i class="fas fa-envelope"></i> votre@email.com</a>
+                <a href="https://github.com/votreusername" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://linkedin.com/in/votreprofil" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Votre Nom. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
