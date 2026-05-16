@@ -1,6 +1,6 @@
 # HarouDev — Portfolio Website
 
-A dark cinematic portfolio website for **HarouDev** (Imad Hamidi), an indie iOS game developer.
+A dark cinematic portfolio website for **HarouDev** (Imad Hamidi), an iOS game developer.
 
 Built with **HTML5 + CSS3 + vanilla JavaScript** — no frameworks, no npm, no build tools.
 
