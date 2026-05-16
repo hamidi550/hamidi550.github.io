@@ -1,0 +1,58 @@
+{
+  "games": [
+    {
+      "id": "1",
+      "title": "SoundZoo: Funny Talking Animal",
+      "description": "Your voice brings animals to life! Record any sound and watch funny zoo creatures repeat it in the most hilarious way. No two zoos are ever the same.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ee/d8/cd/eed8cd68-1c4f-6d0c-4bec-dcfe75a4a420/Placeholder.mill/400x400bb-75.webp",
+      "appstore_url": "https://apps.apple.com/us/app/soundzoo-funny-talking-animal/id6761394947",
+      "visible": true,
+      "position": 0
+    },
+    {
+      "id": "2",
+      "title": "Catnap Coloring & Playtime 5",
+      "description": "Relax, color & enjoy Poppy fun. Color your favorite Poppy Playtime characters in a relaxing and fun way!",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0a/fc/e7/0afce755-28cd-9084-a163-f71b35f2ea8f/Placeholder.mill/400x400bb-75.webp",
+      "appstore_url": "https://apps.apple.com/us/app/catnap-coloring-playtime-5/id6745850253",
+      "visible": true,
+      "position": 1
+    },
+    {
+      "id": "3",
+      "title": "Pressing Under Pressure!",
+      "description": "Don't crack under the clock! Under Pressure is back — bigger, harder, faster. 2 new levels. More questions. More chaos. Still free. How far can you go?",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1c/0b/31/1c0b318a-afa9-ca31-1d8e-80c4c39088d1/Placeholder.mill/400x400bb-75.webp",
+      "appstore_url": "https://apps.apple.com/us/app/pressing-under-pressure/id6747324350",
+      "visible": true,
+      "position": 2
+    },
+    {
+      "id": "4",
+      "title": "Color the World in Dandy",
+      "description": "Dandys Elegant Color by Number. Escape the everyday and embrace serenity — a relaxing color-by-number game blending elegance with fun!",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ce/4f/94/ce4f94fa-08cf-b7e5-3e63-a0aefc7f4f16/Placeholder.mill/400x400bb-75.webp",
+      "appstore_url": "https://apps.apple.com/us/app/color-the-world-in-dandy/id6745111930",
+      "visible": true,
+      "position": 3
+    },
+    {
+      "id": "5",
+      "title": "Steal Colors: Paint Brainrot",
+      "description": "Color Your Heroes By Numbers. Join Pizza nini and friends to bring chaotic, funny meme-style characters to life — one color at a time.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/59/95/33/599533ad-a5e7-ddcc-81cb-ef14d378e14f/Placeholder.mill/400x400bb-75.webp",
+      "appstore_url": "https://apps.apple.com/us/app/steal-colors-paint-brainrot/id6744707762",
+      "visible": true,
+      "position": 4
+    },
+    {
+      "id": "6",
+      "title": "Epic Ride Challenge",
+      "description": "Race, Jump & Beat Obstacles. Race through thrilling tracks filled with dangerous traps — from deep pits to explosive bombs. Collect coins and unlock drivers!",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f7/80/61/f78061d2-5376-6fec-856a-7bfa359590fc/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/400x400bb-75.webp",
+      "appstore_url": "https://apps.apple.com/us/app/epic-ride-challenge/id6738498260",
+      "visible": true,
+      "position": 5
+    }
+  ]
+}

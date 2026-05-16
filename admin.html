@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HarouDev Admin</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+
+  <!-- ═══ LOGIN GATE ═══ -->
+  <div class="login-gate" id="loginGate">
+    <div class="login-card" id="loginCard">
+      <h1>HarouDev</h1>
+      <p>Admin Panel</p>
+      <input type="password" id="loginPassword" placeholder="Enter password" autocomplete="off">
+      <button class="btn-login" id="loginBtn">Enter</button>
+      <p class="login-error" id="loginError">Wrong password</p>
+    </div>
+  </div>
+
+  <!-- ═══ DASHBOARD ═══ -->
+  <div class="dashboard" id="dashboard">
+
+    <!-- Header -->
+    <div class="dash-header">
+      <h1>HarouDev Admin</h1>
+      <div class="dash-header-actions">
+        <a href="index.html" target="_blank" class="btn-sm" id="previewBtn">🖥 Preview Site</a>
+        <button class="btn-sm" id="toggleSidebar">☰ Menu</button>
+        <button class="btn-sm danger" id="logoutBtn">Logout</button>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <button class="sidebar-btn active" data-panel="settings">⚙️ Site Settings</button>
+    </aside>
+
+    <!-- Main -->
+    <main class="dash-main">
+
+      <!-- ── SETTINGS PANEL ── -->
+      <div class="panel active" id="panel-settings">
+        <h2 class="panel-title">Site Settings</h2>
+        <div class="form-group">
+          <label for="setSubtitle">Hero Subtitle</label>
+          <input type="text" id="setSubtitle">
+        </div>
+        <div class="form-group">
+          <label for="setBio">About Bio</label>
+          <textarea id="setBio" rows="5"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="setSkills">Skills</label>
+          <input type="text" id="setSkills">
+          <p class="helper">Separate with commas</p>
+        </div>
+        <div class="form-group">
+          <label for="setPhoto">Developer Photo</label>
+          <input type="file" id="setPhoto" accept="image/*">
+          <div id="photoPreview"></div>
+        </div>
+        <div class="form-group">
+          <label for="setContact">Contact Text</label>
+          <textarea id="setContact" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="setTwitter">Twitter / X URL</label>
+          <input type="url" id="setTwitter">
+        </div>
+        <div class="form-group">
+          <label for="setGithub">GitHub URL</label>
+          <input type="url" id="setGithub">
+        </div>
+        <hr style="border-color:rgba(255,255,255,.06);margin:32px 0">
+        <h3 style="margin-bottom:16px;font-size:.95rem;">Change Password</h3>
+        <div class="form-group">
+          <label for="newPassword">New Password</label>
+          <input type="password" id="newPassword" placeholder="Leave blank to keep current">
+        </div>
+        <div class="info-card" style="background:rgba(0,240,255,0.05);border:1px solid rgba(0,240,255,0.2);border-radius:8px;padding:12px 16px;font-size:0.85rem;color:#a0a0b8;margin-bottom:24px;">
+          <p>📁 <strong>To add or edit games:</strong> open <code>js/games-data.js</code> in any text editor and modify the array. Set <code>"visible": false</code> to hide a game. Change <code>"position"</code> to reorder.</p>
+        </div>
+        <button class="btn-save" id="saveSettingsBtn">Save Settings</button>
+
+        <hr style="border-color:rgba(255,255,255,.06);margin:32px 0">
+        <h3 style="margin-bottom:16px;font-size:.95rem;">Data Backup</h3>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <button class="btn-sm" id="exportBtn">📥 Export Data</button>
+          <label class="btn-sm" style="cursor:pointer;">📤 Import Data <input type="file" id="importFile" accept=".json"
+              style="display:none"></label>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Toast container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="js/db.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+
+</html>
