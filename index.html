@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HarouDev — Indie Game Developer</title>
+  <meta name="description" content="HarouDev is the indie game studio of Imad Hamidi. Discover fun iOS games crafted with passion.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="nav-logo">HarouDev</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#games">Games</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#games" class="mobile-link">Games</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="hero">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">HarouDev</h1>
+      <p class="hero-subtitle" id="heroSubtitle">Indie Game Developer · iOS</p>
+      <div class="hero-buttons">
+        <a href="#games" class="btn btn-primary">View My Games</a>
+        <a href="https://apps.apple.com/us/developer/imad-hamidi/id1781018469" target="_blank" rel="noopener" class="btn btn-outline">App Store ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section id="about" class="reveal">
+    <h2 class="section-title"><span>About Me</span></h2>
+    <div class="about-grid">
+      <div id="aboutPhotoWrap">
+        <div class="about-photo-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-7 8-7s8 3 8 7"/></svg>
+        </div>
+      </div>
+      <div>
+        <p class="about-bio" id="aboutBio">Hi, I'm Imad — a passionate indie game developer building fun iOS experiences under the HarouDev brand.</p>
+        <div class="skills-list" id="skillsList"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ GAMES ═══ -->
+  <section id="games" class="reveal">
+    <h2 class="section-title"><span>My Games</span></h2>
+    <div class="games-grid" id="gamesGrid"></div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section id="contact" class="reveal">
+    <h2 class="section-title"><span>Get In Touch</span></h2>
+    <p class="contact-text" id="contactText">Have a question or want to collaborate? Reach out!</p>
+    <div class="contact-buttons" id="contactButtons"></div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <p>&copy; 2025 HarouDev &middot; All rights reserved</p>
+  </footer>
+
+  <!-- Toast container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="js/db.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
